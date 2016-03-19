@@ -39,7 +39,6 @@ def grayscale_histogram(image)
   histogram
 end
 
-<<<<<<< HEAD
 def max_span(numbers)
   result = []
   while numbers.size != 0
@@ -115,14 +114,3 @@ def max_consecutive(items)
   max
 end
 
-
-
-=======
-def max_span(items)
-
-end
-
-def matrix_bombing_plan(m)
-
-end
->>>>>>> 7bd525eca6c89f3fd4aad1948dbdb20ede0490cf
