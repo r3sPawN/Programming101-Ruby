@@ -2,6 +2,33 @@
 
 The repository for Programming 101 with Ruby.
 
+## Partners
+
+This course is happening, thanks to:
+
+[![](partners/coderunners.png)](https://code-runners.com/about)
+
+## Hosting Partners
+
+[![SiteGround](partners/SiteGround.png)](https://www.siteground.com/)
+
+## Problems & Solutions
+
+| Week | Problem | Solution |
+| ---- |:-------:| --------:|
+| week01 | [1-Warmup-Problems](week01/1-Warmup-Problems) | [procedural_solutions.rb](week01/1-Warmup-Problems/procedural_solutions.rb), [good_solutions.rb](week01/1-Warmup-Problems/good_solutions.rb) |
+| week01 | [2-List-and-Hashes](week01/2-List-and-Hashes) | [solutions.rb](week01/2-List-and-Hashes/solutions.rb) |
+| week01 | [3-I-Know-Everything](week01/3-I-Know-Everything) | None |
+| week02 | [1-Points](week02/1-Points) | None |
+| week02 | [2-Vector](week02/2-Vector) | None |
+| week02 | [3-Resolve-with-each](week02/3-Resolve-with-each) | None |
+| week03 | [1-fmi-tribute](week03/1-fmi-tribute) | None |
+| week03 | [2-Patch-Hash](week03/2-Patch-Hash) | [solution.rb](week03/2-Patch-Hash/solution.rb) |
+| week03 | [3-My-Enumerable](week03/3-My-Enumerable) | [solution.rb](week03/3-My-Enumerable/solution.rb), [solution_test.rb](week03/3-My-Enumerable/solution_test.rb) |
+| week03 | [4-FMI-Tribute-Number-Set](week03/4-FMI-Tribute-Number-Set) | None |
+| week04 | [1-Game-Of-Life](week04/1-Game-Of-Life) | None |
+| week04 | [2-Polynoms-And-Derivates](week04/2-Polynoms-And-Derivates) | [solution.rb](week04/2-Polynoms-And-Derivates/solution.rb), [solution_test.rb](week04/2-Polynoms-And-Derivates/solution_test.rb) |
+
 ## Course Program
 
 This is a detailed program about the course, separated in weeks

@@ -16,15 +16,6 @@ digits_to_number [1, 2, 3] == 123
 digits_to_number [8, 0, 8, 7] == 8087
 ```
 
-## Extreme elements in a list
-
-Implement the following functions that work on lists:
-
-* `min(items)` - returns the mininum element in items
-* `max(items)` - returns the maximum element in items
-* `nth_min(n, items)` - returns the nth minimum element in items
-* `nth_max(n, items)` - returns the nth maximum element in items
-
 ## Grayscale Image Histogram
 
 Implement a function called `grayslace_histogram(image)` that takes a matrix (list of lists) of an image and returns the histogram distribution of each pixel.
@@ -60,7 +51,7 @@ result[255] = 1
 
 ## Maximal Scalar Product
 
-Implement the following function: `maxScalarProduct(v1, v2)`.
+Implement the following function: `max_scalar_product(v1, v2)`.
 
 You are given two vectors - `v1` and `v2`
 
@@ -74,7 +65,7 @@ The scalar product is written as:
 v1 . v2 = a1 * b1 + a2 * b2 + ... + an * bn
 ```
 
-Find a permutation of `v1` and a permutation of `v2` for which their scalar product **is the largest possible**
+Find a permutation of `v1` and a permutation of `v2` for which their scalar product **is the largest possible** and **return that scalar product**
 
 ## Max Span
 
