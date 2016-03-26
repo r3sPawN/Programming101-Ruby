@@ -47,7 +47,7 @@ def max_span(numbers)
     numbers = numbers.drop(1)
 
     numbers.each_with_index do |d, i|
-      span += 1 if numbers.drop(i).include(current)
+      span += 1 if numbers.drop(i).include(current_numb)
     end
   end
   result << span
