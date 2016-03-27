@@ -47,10 +47,20 @@ def max_span(numbers)
     numbers = numbers.drop(1)
 
     numbers.each_with_index do |d, i|
-      span += 1 if numbers.drop(i).include?(current_numb)
+    span += 1 if numbers.drop(i).include?(current_numb)
     end
-  end
   result << span
+  end
+  result.max
+end
+
+def max(list)
+  max = list[0]
+  list.each do |i|
+    max = i if max < i
+  end
+
+  max
 end
 
 def matrix_bombing_plan(m)
