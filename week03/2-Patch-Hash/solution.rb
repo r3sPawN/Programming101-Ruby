@@ -1,5 +1,5 @@
 class Hash
-  def pick3(*keys)
+  def pick(*keys)
     Hash.new.tap do |h|
       each do |k, v|
         h[k] = v if keys.include? k
@@ -7,37 +7,30 @@ class Hash
     end
   end
 
-  def pick2(*keys)
-    select do |k, _|
-      keys.include? k
-    end
-  end
-
-  def pick(*keys)
-    result = {}
-
-    each do |k, v|
-      result[k] = v if keys.include? k
-    end
-
-    result
-  end
-
   def except2(*keys)
     reject { |k, _| keys.include? k }
   end
 
-  def except(*keys)
-    result = {}
-
-    each do |k, v|
-      result[k] = v unless keys.include? k
-    end
-
-    result
-  end
-
   def compact_values
     select { |_, value| value }
+  end
+
+  def defaults(hash)
+    Hash.new.tap do |i|
+      each {|k, v| h[k] = v}
+      hash.each {|k, v| h[k] = v if h[k] == nil }
+    end
+  end
+
+  def compact_values!
+    select! {|_, value| value}
+  end
+
+  def except!(*keys)
+    reject! {|k, _| keys.include? k}
+  end
+
+  def pick!(*keys)
+    select! {|k, v| keys.include? k}
   end
 end
