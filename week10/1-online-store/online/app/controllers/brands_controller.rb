@@ -21,6 +21,12 @@ class BrandsController < ApplicationController
     render json: @brands
   end
 
+  def range_with_index
+  end
+
+  def count_range
+  end
+
   def count
     numb = 0
     @brands = Brand.all
