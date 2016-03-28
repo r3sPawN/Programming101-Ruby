@@ -12,11 +12,10 @@ Rails.application.routes.draw do
   get 'brands/new' ,to: 'brands#new'
   post 'brands/new',to: 'brands#create'
   get 'brands/range/:id',to: 'brands#range_with_index'
-  get 'brands/range/:id/count'
+  get 'brands/range/:id/count',to: 'brands#count_range'
   get 'brands',to: 'brands#show'
   get 'brands/:id',to: 'brands#index'
   delete 'brands/:id', to: 'brands#destroy'
-
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
