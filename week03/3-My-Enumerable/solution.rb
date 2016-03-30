@@ -78,15 +78,17 @@ module MyEnumerable
   end
 
   def min
-    # Your code goes here.
+    reduce {|min, item| min > item ? item : min}
   end
 
   def min_by
-    # Your code goes here.
+    return enum_for(:max_by) unless block_given?
+
+    reduce {|max, item| (yield max) < (yield item) ? item : max}
   end
 
   def max
-    # Your code goes here.
+    reduce { |max, item| max < item ? item : max }
   end
 
   def max_by
@@ -94,15 +96,32 @@ module MyEnumerable
   end
 
   def take(n)
-    # Your code goes here.
+    [].tap do |array|
+      count = 0
+      each do |item|
+        arr << item if count < n
+        count += 1
+      end
+    end
   end
 
   def take_while
-    # Your code goes here.
+    [].tap do |arr|
+      each do |item|
+        arr << item if (yield item)
+        break unless (yield element)
+      end
+    end
   end
 
   def drop(n)
-    # Your code goes here.
+    [].tap do|arr|
+      count = 1
+      each do |item|
+        arr << item if count > n
+        count += 1
+      end
+    end
   end
 
   def drop_while
